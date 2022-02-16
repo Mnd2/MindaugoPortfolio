@@ -1,0 +1,264 @@
+#head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .left {
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 60px;
+        h1{
+            color: $mainh-text-color;
+            font-size: 50px;
+            position: relative;
+            margin-bottom: 40px;
+            &::before {
+                content: "<h1>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                top: -15px;
+                left: -20px;
+            }
+            &::after {
+                content: "</h1>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                bottom: -15px;
+                left: -20px;
+            }
+        }
+        h3{
+            color: $h-text-color;
+            position: relative;
+            font-size: 40px;
+            margin-bottom: 40px;
+            &::before {
+                content: "<h3>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                top: -20px;
+                left: -20px;
+            }
+            &::after {
+                content: "</h3>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                bottom: -20px;
+                left: -20px;
+            }
+        }
+        p {
+            color: $text-color;
+            position: relative;
+            font-size: 20px;
+            text-align: justify;
+            &::before {
+                content: "<p>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                top: -30px;
+                left: -15px;
+            }
+            &::after {
+                content: "</p>";
+                position: absolute;
+                color: $before-after-color;
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+                bottom: -25px;
+                left: -15px;
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        height: 100px;
+        bottom: 20px;
+        position: relative;
+
+        .bootstrap {
+        top: 200px;
+        position: absolute;
+        right: 100px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .css {
+        bottom: -100px;
+        position: absolute;
+        right: 270px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .git {
+        bottom: -100px;
+        position: absolute;
+        right: 150px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .gulp {
+        bottom: -150px;
+        position: absolute;
+        left: 50px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .html {
+        bottom: 50px;
+        position: absolute;
+        left: 300px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .js {
+        bottom: -200px;
+        position: absolute;
+        left: 200px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+        .sass {
+        bottom: 30px;
+        position: absolute;
+        left: 180px;
+            img{
+            width: 100px;
+            height: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    #head {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .left {
+            width: 70%;
+            margin: 0;
+            h1 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .right {
+            width: 0;
+            .bootstrap {
+                top: -10px;
+                right: 15px;
+                opacity: 0.5;
+            }
+            .css {
+                bottom: 150px;
+                right: 270px;
+                opacity: 0.5;
+            }
+            .git {
+                bottom: 150px;
+                right: 70px;
+                opacity: 0.5;
+            }
+            .gulp {
+                bottom: 0;
+                left: -500px;
+                opacity: 0.5;
+            }
+            .html {
+                bottom: 200px;
+                left: -500px;
+                opacity: 0.5;
+            }
+            .js {
+                bottom: -250px;
+                left: -400px;
+                opacity: 0.5;
+            }
+            .sass {
+                bottom: -200px;
+                left: -200px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #head {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .left {
+            width: 90%;
+            margin: 0;
+        }
+        .right {
+            width: 0;
+            .bootstrap {
+                top: -35px;
+                right: 25px;
+                opacity: 0.5;
+            }
+            .css {
+                bottom: 170px;
+                right: 170px;
+                opacity: 0.5;
+            }
+            .git {
+                bottom: 150px;
+                right: -10px;
+                opacity: 0.5;
+            }
+            .gulp {
+                bottom: -245px;
+                left: -70px;
+                opacity: 0.5;
+            }
+            .html {
+                bottom: 200px;
+                left: -190px;
+                opacity: 0.5;
+            }
+            .js {
+                bottom: -250px;
+                left: -250px;
+                opacity: 0.5;
+            }
+            .sass {
+                bottom: -200px;
+                left: -170px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
